@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Funny Foal</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        img { max-width: 80%; height: auto; border: 5px solid #333; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>😂 Here's Your Random Funny Foal! 😂</h1>
+    <img id="funnyImage" src="" alt="Funny Foal">
+    <script>
+        const images = [
+            "https://example.com/funny1.jpg",
+            "https://example.com/funny2.jpg",
+            "https://example.com/funny3.jpg",
+            "https://example.com/funny4.jpg"
+        ];
+        document.getElementById("funnyImage").src = images[Math.floor(Math.random() * images.length)];
+    </script>
+</body>
+</html>
